@@ -1,0 +1,10 @@
+{
+  "tecmundo": {
+    "feed": "https://rss.tecmundo.com.br/feed",
+    "segmentosUrl": ["/tecmundo/inteligencia-artificial/", "/tecmundo/big-techs/"],
+    "palavrasChave": ["inteligencia artificial", "ia", "chatgpt", "gpt", "openai", "claude", "anthropic", "gemini", "codex", "copilot", "llm", "agente", "agentes"]
+  },
+  "medium": {
+    "tags": ["artificial-intelligence", "claude-code", "anthropic", "chatgpt"]
+  }
+}

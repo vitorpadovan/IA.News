@@ -4,12 +4,17 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Visão geral
 
-Repositório de pesquisa/curadoria, **sem código de aplicação, build ou testes**. Objetivo: manter uma conta de Instagram
+Repositório de pesquisa/curadoria, **sem build ou testes** (apenas scripts Node sem dependências). Objetivo: manter uma conta de Instagram
 publicando diariamente notícias sobre IA. O [README.md](README.md) lista as fontes (sites, canais do YouTube, RSS) e os
 tópicos de interesse (claude-code, chat-gpt, claude, codex, anthropic, inteligencia-artificial, artificial-intelligence).
 O trabalho aqui é coletar e filtrar notícias dessas fontes (seção abaixo), não desenvolver software.
 
 ## Estrutura
+
+- `scripts/coletar.mjs`: lê `config/fontes.json` (feed/segmentos/palavras-chave do TecMundo, tags do Medium) e grava
+  `noticias/AAAA-MM-DD/<fonte>/<titulo>.md` com cabeçalho YAML. Controle de duplicatas em `dados/coletadas.json`.
+- `scripts/marcar-publicada.mjs`: registra publicação em `dados/publicadas.json`.
+- Comandos: `node scripts/coletar.mjs`, `node scripts/marcar-publicada.mjs <url|md> [url-do-post]`.
 
 - `.mcp.json` + `scripts\playwright-mcp.cmd`: sobem o `@playwright/mcp` em modo `--extension`; o script carrega as
   variáveis do `.env` da raiz (ignorado pelo git) antes de iniciar. Sem `.env`, o script falha.
