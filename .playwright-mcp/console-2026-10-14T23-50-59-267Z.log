@@ -1,3 +1,0 @@
-[    1310ms] [WARNING] document.domain mutation is ignored because the surrounding agent cluster is origin-keyed. @ https://medium.com/:45
-[   11552ms] [LOG] Download the Apollo DevTools for a better development experience: %s https://chrome.google.com/webstore/detail/apollo-client-developer-t/jdkknkkbebbapilgoeccciglkfbmbnfm @ https://cdn-client.medium.com/lite/assets/chunk-iSbJQgW7Nk.js:0
-[   55721ms] [LOG] {showVolume: false, query: claude news, metrics: Promise, timeRange: All Time, parentSelector: div#xt-ke-widgets-root.xt-ke-google-widgets-absolute} {query: undefined, volumeChart: false, labels: Array(274), values: Array(274), formattedTime: Array(274)} @ chrome-extension://hbapdpeemoojbophdfndmlgdhppljgmp/js/TrendsChart.js:435
