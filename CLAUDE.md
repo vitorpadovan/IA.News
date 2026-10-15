@@ -17,6 +17,8 @@ O trabalho aqui é coletar e filtrar notícias dessas fontes (seção abaixo), n
 - `config/fontes.json` → `feeds[]`: feeds RSS/Atom genéricos (`nome`, `url`, `limite`, `topicos`); cada um vira uma pasta
   `noticias/<data>/<nome>/`. Atom (GitHub releases) vem com HTML escapado; o script trata. O feed da Anthropic é
   **não oficial** (comunidade, `Olshansk/rss-feeds`); DeepSeek só tem releases no GitHub e Google News (link `news.google.com`).
+- Feeds com `"filtrar": true` (Tecnoblog, Olhar Digital, Simon Willison, Google Developers) só gravam itens que casam com
+  `tecmundo.palavrasChave`. Os feeds do `hnrss.org` (pasta `hackernews`) dão 502 com frequência; o erro é isolado por feed.
 - `scripts/marcar-publicada.mjs`: registra publicação em `dados/publicadas.json`.
 - Comandos: `node scripts/coletar.mjs`, `node scripts/marcar-publicada.mjs <url|md> [url-do-post]`.
 

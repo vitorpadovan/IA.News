@@ -40,6 +40,11 @@ Requer Node 18+ e não tem dependências. O `.env` (modelo em `.env.example`) s�
 - https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_news.xml (não oficial)
 - https://github.com/anthropics/claude-code/releases.atom
 - https://github.com/deepseek-ai/DeepSeek-V3/releases.atom e Google News (busca `deepseek`)
+- https://github.com/openai/codex/releases.atom e https://github.com/google-gemini/gemini-cli/releases.atom
+- Em português: Canaltech (IA), Tecnoblog, Olhar Digital
+- Em inglês: TechCrunch, The Verge, Ars Technica, MIT Technology Review (IA), Simon Willison, Latent Space, Import AI,
+  Google Developers Blog
+- Hacker News via https://hnrss.org (busca por claude, openai, gemini, anthropic, deepseek; `points=50`)
 
 ## Tópicos
 
