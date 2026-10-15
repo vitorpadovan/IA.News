@@ -3,7 +3,7 @@ titulo: "IA provocará ‘incidentes graves’ se nada for feito, adverte chefe 
 fonte: tecmundo
 url: https://www.estadao.com.br/tecmundo/inteligencia-artificial/ia-provocara-incidentes-graves-se-nada-for-feito-adverte-chefe-do-google-deepmind/
 data_publicacao: 2026-10-14T17:00:00.000Z
-coletado_em: 2026-10-15T00:35:18.537Z
+coletado_em: 2026-10-15T00:41:15.040Z
 topicos: ["inteligencia-artificial","ia","openai","agentes"]
 ---
 # IA provocará ‘incidentes graves’ se nada for feito, adverte chefe do Google DeepMind

@@ -3,7 +3,7 @@ titulo: "Apple lança HomeView, display inteligente com Siri AI para casa e laze
 fonte: tecmundo
 url: https://www.estadao.com.br/tecmundo/produto-e-review/apple-lanca-homeview-display-inteligente-siri-ai/
 data_publicacao: 2026-10-13T13:18:00.000Z
-coletado_em: 2026-10-15T00:35:18.534Z
+coletado_em: 2026-10-15T00:41:15.037Z
 topicos: ["ia"]
 ---
 # Apple lança HomeView, display inteligente com Siri AI para casa e lazer

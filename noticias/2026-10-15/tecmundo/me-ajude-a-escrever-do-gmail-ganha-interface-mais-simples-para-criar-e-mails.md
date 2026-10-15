@@ -3,7 +3,7 @@ titulo: "‘Me ajude a escrever’ do Gmail ganha interface mais simples para cr
 fonte: tecmundo
 url: https://www.estadao.com.br/tecmundo/produto-e-review/me-ajude-a-escrever-do-gmail-ganha-interface-mais-simples-para-criar-e-mails/
 data_publicacao: 2026-10-14T16:00:00.000Z
-coletado_em: 2026-10-15T00:35:18.540Z
+coletado_em: 2026-10-15T00:41:15.043Z
 topicos: ["ia"]
 ---
 # ‘Me ajude a escrever’ do Gmail ganha interface mais simples para criar e-mails

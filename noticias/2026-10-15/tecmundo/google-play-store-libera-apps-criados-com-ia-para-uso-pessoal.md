@@ -3,7 +3,7 @@ titulo: "Google Play Store libera apps criados com IA para uso pessoal"
 fonte: tecmundo
 url: https://www.estadao.com.br/tecmundo/produto-e-review/google-play-store-libera-apps-criados-com-ia-para-uso-pessoal/
 data_publicacao: 2026-10-14T12:01:00.000Z
-coletado_em: 2026-10-15T00:35:18.551Z
+coletado_em: 2026-10-15T00:41:15.051Z
 topicos: ["ia","gemini"]
 ---
 # Google Play Store libera apps criados com IA para uso pessoal

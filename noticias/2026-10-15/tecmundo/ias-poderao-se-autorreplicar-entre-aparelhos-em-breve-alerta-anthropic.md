@@ -3,7 +3,7 @@ titulo: "IAs poderão se autorreplicar entre aparelhos em breve, alerta Anthropi
 fonte: tecmundo
 url: https://www.estadao.com.br/tecmundo/inteligencia-artificial/ias-poderao-se-autorreplicar-entre-aparelhos-em-breve-alerta-anthropic/
 data_publicacao: 2026-10-14T11:00:00.000Z
-coletado_em: 2026-10-15T00:35:18.554Z
+coletado_em: 2026-10-15T00:41:15.054Z
 topicos: ["inteligencia-artificial","ia","claude","anthropic","agentes"]
 ---
 # IAs poderão se autorreplicar entre aparelhos em breve, alerta Anthropic

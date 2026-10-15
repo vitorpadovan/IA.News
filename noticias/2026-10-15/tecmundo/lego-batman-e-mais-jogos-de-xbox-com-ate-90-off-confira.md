@@ -3,7 +3,7 @@ titulo: "LEGO Batman e mais jogos de Xbox com até 90% OFF; confira"
 fonte: tecmundo
 url: https://www.estadao.com.br/tecmundo/voxel/lego-batman-e-mais-jogos-de-xbox-com-ate-90-off-confira/
 data_publicacao: 2026-10-14T22:45:00.000Z
-coletado_em: 2026-10-15T00:35:18.518Z
+coletado_em: 2026-10-15T00:41:15.024Z
 topicos: ["ia"]
 ---
 # LEGO Batman e mais jogos de Xbox com até 90% OFF; confira

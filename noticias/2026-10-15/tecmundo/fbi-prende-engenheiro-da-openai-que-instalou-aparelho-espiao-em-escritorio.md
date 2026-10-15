@@ -3,7 +3,7 @@ titulo: "FBI prende engenheiro da OpenAI que instalou aparelho espião em escrit
 fonte: tecmundo
 url: https://www.estadao.com.br/tecmundo/inteligencia-artificial/fbi-prende-engenheiro-da-openai-que-instalou-aparelho-espiao-em-escritorio/
 data_publicacao: 2026-10-14T12:17:00.000Z
-coletado_em: 2026-10-15T00:35:18.549Z
+coletado_em: 2026-10-15T00:41:15.050Z
 topicos: ["inteligencia-artificial","ia","chatgpt","openai"]
 ---
 # FBI prende engenheiro da OpenAI que instalou aparelho espião em escritório

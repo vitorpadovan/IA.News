@@ -3,7 +3,7 @@ titulo: "Elon Musk diz ter estar sofrendo episódios de ‘psicose por IA’; en
 fonte: tecmundo
 url: https://www.estadao.com.br/tecmundo/inteligencia-artificial/elon-musk-diz-ter-estar-sofrendo-episodios-de-psicose-por-ia-entenda-o-que-e/
 data_publicacao: 2026-10-14T21:00:00.000Z
-coletado_em: 2026-10-15T00:35:18.524Z
+coletado_em: 2026-10-15T00:41:15.029Z
 topicos: ["inteligencia-artificial","ia","openai","anthropic"]
 ---
 # Elon Musk diz ter estar sofrendo episódios de ‘psicose por IA’; entenda o que é

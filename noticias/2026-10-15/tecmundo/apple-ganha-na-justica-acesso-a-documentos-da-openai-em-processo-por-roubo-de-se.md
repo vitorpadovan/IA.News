@@ -3,7 +3,7 @@ titulo: "Apple ganha na Justiça acesso a documentos da OpenAI em processo por r
 fonte: tecmundo
 url: https://www.estadao.com.br/tecmundo/big-techs/apple-ganha-na-justica-acesso-a-documentos-da-openai-em-processo-por-roubo-de-segredos-comerciais/
 data_publicacao: 2026-10-14T14:45:00.000Z
-coletado_em: 2026-10-15T00:35:18.546Z
+coletado_em: 2026-10-15T00:41:15.047Z
 topicos: ["big-techs","ia","chatgpt","openai"]
 ---
 # Apple ganha na Justiça acesso a documentos da OpenAI em processo por roubo de segredos comerciais

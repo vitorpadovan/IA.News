@@ -3,7 +3,7 @@ titulo: "Microsoft anuncia Xbox Labs para surfar na onda de ports e games que us
 fonte: tecmundo
 url: https://www.estadao.com.br/tecmundo/voxel/microsoft-anuncia-xbox-labs-para-surfar-na-onda-de-ports-e-games-que-usam-ia/
 data_publicacao: 2026-10-14T15:45:00.000Z
-coletado_em: 2026-10-15T00:35:18.541Z
+coletado_em: 2026-10-15T00:41:15.044Z
 topicos: ["ia","openai","claude","anthropic"]
 ---
 # Microsoft anuncia Xbox Labs para surfar na onda de ports e games que usam IA

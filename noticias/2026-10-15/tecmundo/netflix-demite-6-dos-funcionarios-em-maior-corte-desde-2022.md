@@ -3,7 +3,7 @@ titulo: "Netflix demite 6% dos funcionários em maior corte desde 2022"
 fonte: tecmundo
 url: https://www.estadao.com.br/tecmundo/big-techs/netflix-demite-6-dos-funcionarios-em-maior-corte-desde-2022/
 data_publicacao: 2026-10-14T15:05:00.000Z
-coletado_em: 2026-10-15T00:35:18.545Z
+coletado_em: 2026-10-15T00:41:15.046Z
 topicos: ["big-techs"]
 ---
 # Netflix demite 6% dos funcionários em maior corte desde 2022

@@ -3,7 +3,7 @@ titulo: "Operação global derruba rede responsável por 1 bilhão de mensagens 
 fonte: tecmundo
 url: https://www.estadao.com.br/tecmundo/ciberseguranca/operacao-global-derruba-rede-responsavel-por-1-bilhao-de-mensagens-de-golpe/
 data_publicacao: 2026-10-14T21:30:00.000Z
-coletado_em: 2026-10-15T00:35:18.522Z
+coletado_em: 2026-10-15T00:41:15.027Z
 topicos: ["ia"]
 ---
 # Operação global derruba rede responsável por 1 bilhão de mensagens de golpe

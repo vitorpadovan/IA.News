@@ -3,7 +3,7 @@ titulo: "14 AI Terms You Need to Get Real Results from ChatGPT and Claude"
 fonte: medium
 url: https://medium.com/@mhabir102/ai-terms-for-beginners-39de04475903
 data_publicacao: 2026-10-14T22:50:49.000Z
-coletado_em: 2026-10-15T00:35:19.802Z
+coletado_em: 2026-10-15T00:41:16.138Z
 topicos: ["chatgpt","ai","productivity","writing","prompt-engineering"]
 ---
 # 14 AI Terms You Need to Get Real Results from ChatGPT and Claude

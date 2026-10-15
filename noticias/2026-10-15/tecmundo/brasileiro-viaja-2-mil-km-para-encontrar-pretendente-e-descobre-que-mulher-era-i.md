@@ -3,7 +3,7 @@ titulo: "Brasileiro viaja 2 mil km para encontrar ‘pretendente’ e descobre q
 fonte: tecmundo
 url: https://www.estadao.com.br/tecmundo/inteligencia-artificial/brasileiro-viaja-2-mil-km-para-encontrar-pretendente-e-descobre-que-mulher-era-ia/
 data_publicacao: 2026-10-14T22:00:00.000Z
-coletado_em: 2026-10-15T00:35:18.519Z
+coletado_em: 2026-10-15T00:41:15.025Z
 topicos: ["inteligencia-artificial","ia"]
 ---
 # Brasileiro viaja 2 mil km para encontrar ‘pretendente’ e descobre que mulher era IA

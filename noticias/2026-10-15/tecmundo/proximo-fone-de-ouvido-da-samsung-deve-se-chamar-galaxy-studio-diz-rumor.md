@@ -3,7 +3,7 @@ titulo: "Próximo fone de ouvido da Samsung deve se chamar Galaxy Studio, diz ru
 fonte: tecmundo
 url: https://www.estadao.com.br/tecmundo/produto-e-review/proximo-fone-de-ouvido-da-samsung-deve-se-chamar-galaxy-studio-diz-rumor/
 data_publicacao: 2026-10-11T12:00:00.000Z
-coletado_em: 2026-10-15T00:35:18.532Z
+coletado_em: 2026-10-15T00:41:15.036Z
 topicos: ["ia"]
 ---
 # Próximo fone de ouvido da Samsung deve se chamar Galaxy Studio, diz rumor

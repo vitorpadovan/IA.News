@@ -3,7 +3,7 @@ titulo: "Bug Bounty: Google muda recompensas após enxurrada de relatórios de I
 fonte: tecmundo
 url: https://www.estadao.com.br/tecmundo/ciberseguranca/bug-bounty-google-muda-recompensas-apos-enxurrada-de-relatorios-por-ia/
 data_publicacao: 2026-10-14T16:35:00.000Z
-coletado_em: 2026-10-15T00:35:18.538Z
+coletado_em: 2026-10-15T00:41:15.041Z
 topicos: ["ia","agentes"]
 ---
 # Bug Bounty: Google muda recompensas após enxurrada de relatórios de IA

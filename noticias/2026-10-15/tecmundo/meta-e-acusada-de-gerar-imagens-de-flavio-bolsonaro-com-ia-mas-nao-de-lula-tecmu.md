@@ -3,7 +3,7 @@ titulo: "Meta é acusada de gerar imagens de Flávio Bolsonaro com IA, mas não 
 fonte: tecmundo
 url: https://www.estadao.com.br/tecmundo/inteligencia-artificial/meta-acusada-gerar-imagens-ia-flavio-bolsonaro-mas-nao-de-lula/
 data_publicacao: 2026-10-14T18:35:00.000Z
-coletado_em: 2026-10-15T00:35:18.530Z
+coletado_em: 2026-10-15T00:41:15.034Z
 topicos: ["inteligencia-artificial","ia","chatgpt","openai","anthropic","gemini","agentes"]
 ---
 # Meta é acusada de gerar imagens de Flávio Bolsonaro com IA, mas não de Lula; TecMundo verificou

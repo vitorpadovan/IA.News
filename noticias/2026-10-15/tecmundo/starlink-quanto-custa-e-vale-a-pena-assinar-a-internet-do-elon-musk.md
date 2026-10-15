@@ -3,7 +3,7 @@ titulo: "Starlink: quanto custa e vale a pena assinar a internet do Elon Musk?"
 fonte: tecmundo
 url: https://www.estadao.com.br/tecmundo/big-techs/quanto-custa-a-starlink-no-brasil-conheca-os-planos/
 data_publicacao: 2026-10-14T23:15:00.000Z
-coletado_em: 2026-10-15T00:35:18.512Z
+coletado_em: 2026-10-15T00:41:15.018Z
 topicos: ["big-techs"]
 ---
 # Starlink: quanto custa e vale a pena assinar a internet do Elon Musk?

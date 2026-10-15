@@ -3,7 +3,7 @@ titulo: "15 anos de Siri: assistente da Apple evolui com IA, mas chegou atrasada
 fonte: tecmundo
 url: https://www.estadao.com.br/tecmundo/produto-e-review/15-anos-de-siri-assistente-da-apple-evolui-com-ia-mas-chegou-atrasada/
 data_publicacao: 2026-10-14T20:00:00.000Z
-coletado_em: 2026-10-15T00:35:18.527Z
+coletado_em: 2026-10-15T00:41:15.031Z
 topicos: ["ia","chatgpt","gemini","copilot"]
 ---
 # 15 anos de Siri: assistente da Apple evolui com IA, mas chegou atrasada

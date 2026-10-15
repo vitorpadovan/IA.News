@@ -3,7 +3,7 @@ titulo: "FMI aumenta projeção de crescimento da economia global por causa da I
 fonte: tecmundo
 url: https://www.estadao.com.br/tecmundo/inteligencia-artificial/fmi-aumenta-projecao-de-crescimento-da-economia-global-por-causa-da-ia/
 data_publicacao: 2026-10-14T15:00:00.000Z
-coletado_em: 2026-10-15T00:35:18.543Z
+coletado_em: 2026-10-15T00:41:15.045Z
 topicos: ["inteligencia-artificial","ia","anthropic","gemini"]
 ---
 # FMI aumenta projeção de crescimento da economia global por causa da IA

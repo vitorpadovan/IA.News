@@ -3,7 +3,7 @@ titulo: "RTX Spark será compatível com vários games no lançamento; confira l
 fonte: tecmundo
 url: https://www.estadao.com.br/tecmundo/voxel/rtx-spark-sera-compativel-com-varios-games-no-lancamento-confira-lista/
 data_publicacao: 2026-10-14T11:15:00.000Z
-coletado_em: 2026-10-15T00:35:18.552Z
+coletado_em: 2026-10-15T00:41:15.053Z
 topicos: ["ia"]
 ---
 # RTX Spark será compatível com vários games no lançamento; confira lista

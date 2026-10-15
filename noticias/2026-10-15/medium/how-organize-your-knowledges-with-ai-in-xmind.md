@@ -3,7 +3,7 @@ titulo: "How Organize Your Knowledges with AI in Xmind"
 fonte: medium
 url: https://medium.com/@band.m./how-organize-your-knowledges-with-ai-in-xmind-0a0ff269a529
 data_publicacao: 2026-10-14T21:07:50.000Z
-coletado_em: 2026-10-15T00:35:19.809Z
+coletado_em: 2026-10-15T00:41:16.143Z
 topicos: ["chatgpt","artificial-intelligence","ai","ai-agent","knowledge-management"]
 ---
 # How Organize Your Knowledges with AI in Xmind

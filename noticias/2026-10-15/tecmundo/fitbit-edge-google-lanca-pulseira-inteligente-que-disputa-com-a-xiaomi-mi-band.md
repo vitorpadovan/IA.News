@@ -3,7 +3,7 @@ titulo: "Fitbit Edge: Google lança pulseira inteligente que disputa com a Xiaom
 fonte: tecmundo
 url: https://www.estadao.com.br/tecmundo/produto-e-review/fitbit-edge-google-lanca-pulseira-inteligente-que-disputa-com-a-xiaomi-mi-band/
 data_publicacao: 2026-10-13T20:00:00.000Z
-coletado_em: 2026-10-15T00:35:18.535Z
+coletado_em: 2026-10-15T00:41:15.039Z
 topicos: ["ia"]
 ---
 # Fitbit Edge: Google lança pulseira inteligente que disputa com a Xiaomi ‘Mi Band’
