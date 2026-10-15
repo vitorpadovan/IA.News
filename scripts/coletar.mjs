@@ -12,6 +12,7 @@ const arqColetadas = join(raiz, 'dados', 'coletadas.json');
 const coletadas = JSON.parse(await readFile(arqColetadas, 'utf8'));
 const semGit = process.argv.includes('--sem-git');
 const alterados = [];
+const usados = new Set();
 const hoje = new Date().toISOString().slice(0, 10);
 
 const norm = (s) => s.normalize('NFD').replace(/\p{M}/gu, '').toLowerCase();
@@ -25,16 +26,18 @@ function tag(bloco, nome) {
   return m ? m[1].replace(/^\s*<!\[CDATA\[([\s\S]*?)\]\]>\s*$/, '$1').trim() : '';
 }
 function itens(xml) {
-  return [...xml.matchAll(/<item>([\s\S]*?)<\/item>/g)].map((m) => ({
-    titulo: decodificar(tag(m[1], 'title')),
-    url: tag(m[1], 'link'),
-    data: tag(m[1], 'pubDate'),
-    categorias: [...m[1].matchAll(/<category[^>]*>([\s\S]*?)<\/category>/g)].map((c) =>
+  // Suporta RSS (<item>) e Atom (<entry>).
+  return [...xml.matchAll(/<(item|entry)[ >]([\s\S]*?)<\/\1>/g)].map(([, tipo, b]) => ({
+    titulo: decodificar(tag(b, 'title').replace(/<[^>]+>/g, '')),
+    url: tipo === 'item' ? tag(b, 'link') : (b.match(/<link[^>]*href="([^"]+)"/) ?? [])[1] ?? '',
+    data: tag(b, 'pubDate') || tag(b, 'published') || tag(b, 'updated'),
+    categorias: [...b.matchAll(/<category[^>]*>([\s\S]*?)<\/category>/g)].map((c) =>
       decodificar(c[1].replace(/<!\[CDATA\[|\]\]>/g, '').trim())),
-    html: tag(m[1], 'content:encoded') || tag(m[1], 'description'),
+    html: tag(b, 'content:encoded') || tag(b, 'content') || tag(b, 'description') || tag(b, 'summary'),
   }));
 }
 function htmlParaMd(html) {
+  if (!html.includes('<') && html.includes('&lt;')) html = decodificar(html); // Atom entrega HTML escapado
   return decodificar(
     html
       .replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>|<figure[\s\S]*?<\/figure>/gi, '')
@@ -53,7 +56,9 @@ async function baixar(url) {
 async function gravar(fonte, n, topicos) {
   if (!n.url || coletadas[n.url]) return false;
   const pasta = join('noticias', hoje, fonte);
-  const arquivo = join(pasta, `${slug(n.titulo)}.md`);
+  let arquivo = join(pasta, `${slug(n.titulo)}.md`);
+  for (let i = 2; usados.has(arquivo); i++) arquivo = join(pasta, `${slug(n.titulo)}-${i}.md`);
+  usados.add(arquivo);
   const cab = [
     '---',
     `titulo: ${aspas(n.titulo)}`,
@@ -91,6 +96,15 @@ for (const t of cfg.medium.tags) {
       if (await gravar('medium', n, [...new Set([t, ...n.categorias])])) novas++;
     }
   } catch (e) { console.error(`medium/${t}: ${e.message}`); }
+}
+// Feeds genéricos (RSS/Atom): um por entrada em cfg.feeds, limitados aos N mais recentes.
+for (const f of cfg.feeds ?? []) {
+  try {
+    const lista = itens(await baixar(f.url))
+      .sort((x, y) => new Date(y.data || 0) - new Date(x.data || 0))
+      .slice(0, f.limite ?? 15);
+    for (const n of lista) if (await gravar(f.nome, n, f.topicos ?? [])) novas++;
+  } catch (e) { console.error(`${f.nome}: ${e.message}`); }
 }
 await writeFile(arqColetadas, JSON.stringify(coletadas, null, 2) + '\n', 'utf8');
 console.log(`${novas} notícia(s) nova(s) em noticias/${hoje}/`);

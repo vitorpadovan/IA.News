@@ -1,10 +1,95 @@
 {
   "tecmundo": {
     "feed": "https://rss.tecmundo.com.br/feed",
-    "segmentosUrl": ["/tecmundo/inteligencia-artificial/", "/tecmundo/big-techs/"],
-    "palavrasChave": ["inteligencia artificial", "ia", "chatgpt", "gpt", "openai", "claude", "anthropic", "gemini", "codex", "copilot", "llm", "agente", "agentes"]
+    "segmentosUrl": [
+      "/tecmundo/inteligencia-artificial/",
+      "/tecmundo/big-techs/"
+    ],
+    "palavrasChave": [
+      "inteligencia artificial",
+      "ia",
+      "chatgpt",
+      "gpt",
+      "openai",
+      "claude",
+      "anthropic",
+      "gemini",
+      "codex",
+      "copilot",
+      "llm",
+      "agente",
+      "agentes"
+    ]
   },
   "medium": {
-    "tags": ["artificial-intelligence", "claude-code", "anthropic", "chatgpt"]
-  }
+    "tags": [
+      "artificial-intelligence",
+      "claude-code",
+      "anthropic",
+      "chatgpt"
+    ]
+  },
+  "feeds": [
+    {
+      "nome": "openai",
+      "url": "https://openai.com/news/rss.xml",
+      "limite": 15,
+      "topicos": [
+        "openai",
+        "chatgpt"
+      ]
+    },
+    {
+      "nome": "google-gemini",
+      "url": "https://blog.google/products/gemini/rss/",
+      "limite": 15,
+      "topicos": [
+        "gemini",
+        "google"
+      ]
+    },
+    {
+      "nome": "google-ia",
+      "url": "https://blog.google/technology/ai/rss/",
+      "limite": 15,
+      "topicos": [
+        "google",
+        "inteligencia-artificial"
+      ]
+    },
+    {
+      "nome": "anthropic",
+      "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_news.xml",
+      "limite": 15,
+      "topicos": [
+        "anthropic",
+        "claude"
+      ]
+    },
+    {
+      "nome": "claude-code",
+      "url": "https://github.com/anthropics/claude-code/releases.atom",
+      "limite": 10,
+      "topicos": [
+        "claude-code",
+        "anthropic"
+      ]
+    },
+    {
+      "nome": "deepseek-github",
+      "url": "https://github.com/deepseek-ai/DeepSeek-V3/releases.atom",
+      "limite": 5,
+      "topicos": [
+        "deepseek"
+      ]
+    },
+    {
+      "nome": "deepseek-googlenews",
+      "url": "https://news.google.com/rss/search?q=deepseek&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+      "limite": 15,
+      "topicos": [
+        "deepseek"
+      ]
+    }
+  ]
 }
