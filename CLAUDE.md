@@ -60,3 +60,15 @@ O trabalho aqui é coletar e filtrar notícias dessas fontes (seção abaixo), n
 
 Coletar o feed do TecMundo e filtrar localmente por tópico; Medium via feed por tag; Google News só para
 achar matérias fora do TecMundo.
+
+## Regra: descobrir novas fontes
+
+Sempre que, ao ler uma notícia (arquivos em `noticias/`), aparecer uma **fonte original** citada ou linkada (blog oficial,
+repositório, canal, publicação) que ainda não esteja no projeto, adicione-a:
+
+1. Conferir se já existe em `config/fontes.json` ou na seção "Fontes" do [README.md](README.md).
+2. Procurar um feed RSS/Atom e **validar pelo conteúdo** (itens presentes), não só pelo status HTTP: vários sites devolvem
+   200 com página de "não encontrado".
+3. Com feed válido: incluir em `feeds[]` (com `limite` e `topicos`) e listar no README. Sem feed: só listar no README,
+   anotando que não há RSS.
+4. Ignorar links genéricos (redes sociais, páginas de login, agregadores) e fontes que só repetem o que já se coleta.
