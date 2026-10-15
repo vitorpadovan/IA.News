@@ -19,9 +19,9 @@ O trabalho aqui é coletar e filtrar notícias dessas fontes (seção abaixo), n
   **não oficial** (comunidade, `Olshansk/rss-feeds`); DeepSeek só tem releases no GitHub e Google News (link `news.google.com`).
 - Feeds com `"filtrar": true` (Tecnoblog, Olhar Digital, Simon Willison, Google Developers) só gravam itens que casam com
   `tecmundo.palavrasChave`. Os feeds do `hnrss.org` (pasta `hackernews`) dão 502 com frequência; o erro é isolado por feed.
-- `.claude/commands/noticias-do-dia.md`: slash command `/noticias-do-dia [data] [qtd]`. Escolhe 3–5 notícias de
-  `noticias/<data>/` (ignorando `dados/publicadas.json` e o que já virou rascunho) e grava `posts/<data>/NN-<slug>.md`
-  (legenda, hashtags, carrossel). Nunca publica nem marca como publicada.
+- `.claude/commands/noticias-do-dia.md`: slash command `/noticias-do-dia [data] [qtd]`. Seleciona até 10 finalistas de
+  `noticias/<data>/` (ignorando `dados/publicadas.json` e o que já virou rascunho), espera o usuário escolher e grava
+  `posts/<data>/NN-<slug>.md` (legenda, hashtags, carrossel). Nunca publica nem marca como publicada.
 - `scripts/marcar-publicada.mjs`: registra publicação em `dados/publicadas.json`.
 - Comandos: `node scripts/coletar.mjs`, `node scripts/marcar-publicada.mjs <url|md> [url-do-post]`.
 

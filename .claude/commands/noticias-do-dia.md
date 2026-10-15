@@ -1,11 +1,12 @@
 ---
 description: Cura as notícias coletadas e gera rascunhos de posts de Instagram (legenda, hashtags e carrossel)
-argument-hint: "[AAAA-MM-DD] [quantidade, padrão 4]"
+argument-hint: "[AAAA-MM-DD] [quantidade, padrão 10] [todos]"
 ---
 
 Faça a curadoria das notícias coletadas e gere rascunhos de posts para o Instagram.
 
-Argumentos: `$ARGUMENTS` (data da coleta, padrão = hoje; quantidade de posts, padrão 4, entre 3 e 5).
+Argumentos: `$ARGUMENTS` (data da coleta, padrão = hoje; quantidade de finalistas, padrão 10, entre 3 e 10; a palavra
+`todos` gera o rascunho de todas as finalistas sem esperar a escolha do usuário).
 
 ## 1. Candidatas
 
@@ -15,7 +16,7 @@ Argumentos: `$ARGUMENTS` (data da coleta, padrão = hoje; quantidade de posts, p
 3. Descarte também o que já virou rascunho em `posts/` (procure a `url` nos arquivos de lá).
 4. Se a pasta do dia não existir ou ficar vazia, avise e sugira rodar `node scripts/coletar.mjs`. Não rode sozinho.
 
-## 2. Escolha (3 a 5 itens)
+## 2. Finalistas (até 10 itens)
 
 Critérios, em ordem:
 - **Relevância** para os tópicos do projeto (claude-code, chatgpt, claude, codex, anthropic, openai, gemini, deepseek,
@@ -30,7 +31,12 @@ Descarte conteúdo promocional, tutorial genérico de baixa qualidade e itens se
 Fontes com só snippet (Medium, Hacker News): leia o artigo original antes de usar. Se não conseguir ler, **não invente
 detalhes**; use só o que está confirmado.
 
-## 3. Rascunho de cada post
+## 3. Escolha do usuário
+
+Apresente as finalistas numeradas (tabela: nº, título, fonte, data, uma linha dizendo por que entrou) e **pare**
+esperando o usuário indicar quais virarão post (ex.: "1, 3, 7"). Só pule essa pausa se `todos` foi passado.
+
+## 4. Rascunho de cada post escolhido
 
 Grave em `posts/<data>/NN-<slug>.md` (NN = ordem de prioridade), em português, com este cabeçalho:
 
@@ -55,7 +61,7 @@ Corpo:
 Regras de conteúdo: não afirme nada que não esteja na fonte; mantenha números, datas e nomes exatamente como na fonte;
 marque `[CONFIRMAR]` onde houver dúvida.
 
-## 4. Fechamento
+## 5. Fechamento
 
 Mostre ao usuário uma tabela com os posts gerados (título, fonte, por que foi escolhido) e as notícias descartadas mais
 relevantes com o motivo. **Não publique nem marque como publicada.** Depois da aprovação do usuário, a marcação é feita com
