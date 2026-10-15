@@ -1,0 +1,31 @@
+---
+titulo: "AI labs are buying data from dead startups to train their models"
+fonte: mit-technology-review
+url: https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/
+data_publicacao: 2026-10-13T09:00:00.000Z
+coletado_em: 2026-10-15T01:07:48.456Z
+topicos: ["inteligencia-artificial"]
+---
+# AI labs are buying data from dead startups to train their models
+
+When Keelan Miskell began winding down his crypto startup this year, he didn’t think its data was worth much: the users were anonymous, the company just a few years old. But he’s since turned the firm’s digital archives into real money. He’s netted roughly $25,000 for his code base and a still-pending amount (likely around $15,000) for the workspace data in Google, Notion, Figma, and Slack. “At least all that stuff we were doing for two and a half years is worth something to someone somewhere,” he says.
+
+The sale was brokered by a company called SimpleClosure, part of a new growth sector in tech: businesses catering to dying startups. Estimates from [Carta](https://carta.com/data/startup-shutdowns-q1-2024/) and [AngelList](https://techcrunch.com/2025/01/26/2025-will-likely-be-another-brutal-year-of-failed-startups-data-suggests/) show shutdowns rising between 26% and 56% annually in recent years, and an end-of-life ecosystem—including coaches, “death doulas,” and firms that help handle the legal, tax, and operational headaches of going ­belly-up—has emerged. Now tech undertakers are selling the data remains to AI labs. 
+
+SimpleClosure [added data sales](https://simpleclosure.com/blog/insights/simpleclosure-asset-hub/) to its services in April. Its Asset Hub platform helps founders sell their code and workspace data—emails, chats, documents. Buyers include foundation AI labs, vendors that construct simulated workspaces for AI training, and mature tech companies building their own models. Asset Hub has handled over 150 deals and expects to return over $10 million to startups by the end of 2026. CEO Dori Yona has seen these transactions, once rare and “somewhat taboo,” become increasingly routine, with 47% of SimpleClosure deals now including code or data sales. 
+
+And it’s got company. Industry rival Sunset also has a rapidly growing data resale business. Founder and CEO Brendan Mahony says Sunset values a dying client’s assets by head count, years in operation, volume of data, and how the team used its tools. Particle board, he says, is a good analogy: “This operational exhaust data is like the wood shavings that everyone thought had no value, but it actually has a ton.” 
+
+Demand for defunct companies’ data emerged suddenly last year, as AI training labs hit the limits of public and synthetic datasets. Surge AI, for example, buys data to build “reinforcement-learning gyms” where clients’ AI agents practice tasks—think debugging a complex IT architecture or drafting appellate briefs. Nick Heiner, who leads the company’s work on these environments, says he seeks data archives reflecting a range of situations, from disagreements to tricky judgment calls. Heiner explains that one company’s Slack history, if it captures conversations with variety and depth, can be worth more than another’s Slack, email, and calendars combined.
+
+Real archives avoid common errors in synthetic worlds, such as references to dates that don’t exist, but the extent of performance gains remains unclear. No company has yet released tests comparing results of real-world data training with the alternatives. Pricing reflects this uncertainty: Buyers quote wildly different numbers, Heiner says, because valuations are based on “research theses” estimating how many useful tasks come from, say, 100,000 lines of code.
+
+That hasn’t stopped bigger deals from happening. This past August, as part of Spirit Airlines’ bankruptcy, Google outbid the AI data company Mercor to [buy the carrier’s decades of data](https://www.reuters.com/legal/litigation/google-buy-spirit-airlines-business-data-10-million-2026-08-17/), including 100 million emails, 500 million Teams messages, and 176,000 employee records. The price tag: $10 million. And [Bloomberg reported](https://www.bloomberg.com/news/articles/2026-09-17/spacex-discusses-buying-data-for-ai-models-from-failed-startups) in September that SpaceX’s AI unit is weighing buying data from struggling startups. 
+
+Legally, this all could get iffy. Spirit’s flight attendants’ union [objected](https://news.bloomberglaw.com/bankruptcy-law/spirit-data-sale-to-google-prompts-flight-attendants-objection) to the sale on privacy grounds, and Greg Ewing, an attorney who advises AI startups, has called such data “legally radioactive.” Suppliers employ data scientists to scrub personally identifiable information and exclude HR records, and buyers say they scrub too. But Ewing points out some of the private details that lurk in emails and calendars: doctor appointments, school pickup arrangements, date-night plans. He describes a “Wild West of AI training” that is only starting to give way to proper licensing agreements and vetted use.
+
+There’s also the question of who profits from these windfalls. The proceeds typically flow to senior creditors and investors—not employees. To Ifeoma Ajunwa, a law professor at Emory University and author of The Quantified Worker, this represents a form of “captured capital.” Legal precedent allows for monitoring to help workers do their jobs, but once a firm is out of business, that justification vanishes. “Employers should have express consent before selling workers’ data,” says Ajunwa, but she adds that there’s no federal law banning such sales.
+
+While many see this new market as a chance for failing businesses to recover some value, these wind-down sales also have limitations. Founders have little to no visibility into who is buying the data and what they plan to do with it. Plus, there’s little assurance they’re getting a fair offer. Data prices will likely stabilize in the coming year, though, unless an AI bubble pops first. Either way, tech’s new undertakers will be there to appraise what’s left. 
+
+Matthew King is a technology and environmental journalist based in Baltimore.
