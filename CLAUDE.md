@@ -63,12 +63,14 @@ achar matérias fora do TecMundo.
 
 ## Regra: descobrir novas fontes
 
-Sempre que, ao ler uma notícia (arquivos em `noticias/`), aparecer uma **fonte original** citada ou linkada (blog oficial,
-repositório, canal, publicação) que ainda não esteja no projeto, adicione-a:
+Sempre que uma notícia (arquivos em `noticias/`) indicar que se baseia em, cita ou linka uma fonte — "segundo", "de acordo
+com", "baseado em", "according to", "via", "source:", ou qualquer link de atribuição solto no texto —, adicione essa fonte
+ao projeto, mesmo que seja um link isolado:
 
 1. Conferir se já existe em `config/fontes.json` ou na seção "Fontes" do [README.md](README.md).
-2. Procurar um feed RSS/Atom e **validar pelo conteúdo** (itens presentes), não só pelo status HTTP: vários sites devolvem
-   200 com página de "não encontrado".
+2. Procurar um feed RSS/Atom do site/repositório citado e **validar pelo conteúdo** (itens presentes), não só pelo status
+   HTTP: vários sites devolvem 200 com página de "não encontrado".
 3. Com feed válido: incluir em `feeds[]` (com `limite` e `topicos`) e listar no README. Sem feed: só listar no README,
    anotando que não há RSS.
-4. Ignorar links genéricos (redes sociais, páginas de login, agregadores) e fontes que só repetem o que já se coleta.
+4. Não adicionar apenas o que não é fonte de conteúdo: redes sociais pessoais, páginas de login/cadastro, links de
+   afiliado e fontes já coletadas.
