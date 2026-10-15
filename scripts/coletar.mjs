@@ -13,7 +13,7 @@ const hoje = new Date().toISOString().slice(0, 10);
 const norm = (s) => s.normalize('NFD').replace(/\p{M}/gu, '').toLowerCase();
 const slug = (s) => norm(s).replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 80) || 'sem-titulo';
 const entidades = { '&amp;': '&', '&lt;': '<', '&gt;': '>', '&quot;': '"', '&#39;': "'", '&nbsp;': ' ', '&apos;': "'" };
-const decodificar = (s) => s.replace(/&#(\d+);/g, (_, n) => String.fromCharCode(+n)).replace(/&[a-z#0-9]+;/gi, (e) => entidades[e] ?? e);
+const decodificar = (s) => s.replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCodePoint(parseInt(h, 16))).replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(+n)).replace(/&[a-z#0-9]+;/gi, (e) => entidades[e] ?? e);
 const aspas = (s) => JSON.stringify(s ?? '');
 
 function tag(bloco, nome) {
