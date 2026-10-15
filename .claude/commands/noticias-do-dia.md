@@ -23,6 +23,9 @@ Argumentos: `$ARGUMENTS` (data da coleta, padrão = hoje; quantidade de finalist
    `posts/<data>/ranking.md` com a lista **Geral** e a lista **Técnica** (índice técnico ≥ 40), com o detalhe da pontuação.
 2. Revise o ranking com juízo editorial: o script não junta o mesmo fato escrito em idiomas diferentes. Se achar
    duplicatas, acrescente os trechos de título em `config/mesmo-fato.json` e rode de novo.
+3. **Sempre mostre o título traduzido para pt-BR** (com o original ao lado), em listas e tabelas, para o usuário conseguir
+   escolher. As traduções ficam em `dados/titulos-pt.json` (chave = url). O script lista ao final os itens sem tradução:
+   traduza-os, grave no JSON e rode de novo antes de apresentar.
 3. Confira o que ele não sabe: itens `sem data` (google-developers) e fontes só com snippet (Medium, Hacker News).
 
 ## 3. Escolha do usuário

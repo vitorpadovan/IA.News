@@ -9,6 +9,9 @@ const hojeDir = (await readdir(join(raiz, 'noticias'))).sort().at(-1);
 const data = process.argv[2] ?? hojeDir;
 const TAM = Number(process.argv[3] ?? 20);
 const LIMIAR_TEC = 40;
+const FONTES_PT = new Set(['tecmundo', 'canaltech', 'olhardigital', 'tecnoblog', 'deepseek-googlenews']);
+// Traduções dos títulos (url -> título em pt-BR), mantidas em dados/titulos-pt.json.
+const titulosPt = JSON.parse(await readFile(join(raiz, 'dados', 'titulos-pt.json'), 'utf8').catch(() => '{}'));
 
 const norm = (s) => s.normalize('NFD').replace(/\p{M}/gu, '').toLowerCase();
 
@@ -137,7 +140,12 @@ if (listaTec.length < TAM) {
   listaTec = [...listaTec, ...extra].slice(0, TAM).sort((x, y) => y.pontos - x.pontos);
 }
 
-const linha = (i, n) => `| ${n} | **${i.pontos}** | ${i.tec} | ${i.titulo.replaceAll('|', '/')} | ${i.fonte}${i.apoio.length ? ` (+${i.apoio.join(', ')})` : ''} | ${i.data ? i.data.toISOString().slice(5, 10) : 'sem data'} | \`${i.arquivo}\` |`;
+const exibir = (i) => {
+  const t = i.titulo.replaceAll('|', '/');
+  const pt = titulosPt[i.url];
+  return pt ? `**${pt.replaceAll('|', '/')}**<br>_${t}_` : t;
+};
+const linha = (i, n) => `| ${n} | **${i.pontos}** | ${i.tec} | ${exibir(i)} | ${i.fonte}${i.apoio.length ? ` (+${i.apoio.join(', ')})` : ''} | ${i.data ? i.data.toISOString().slice(5, 10) : 'sem data'} | \`${i.arquivo}\` |`;
 const d = (i) => Object.entries(i.detalhe).map(([k, v]) => `${k} ${v}`).join(' · ');
 const tabela = (lista) => ['| # | Pontos | Téc. | Título | Fonte (apoio) | Data | Arquivo |', '|---|---|---|---|---|---|---|', ...lista.map((i, k) => linha(i, k + 1))].join('\n');
 const md = `# Ranking ${data}
@@ -160,5 +168,11 @@ ${[...listaGeral.map((i) => ['G', i]), ...listaTec.map((i) => ['T', i])].map(([l
 `;
 await mkdir(join(raiz, 'posts', data), { recursive: true });
 await writeFile(join(raiz, 'posts', data, 'ranking.md'), md, 'utf8');
+const pendentes = [...listaGeral, ...listaTec].filter((i) => !FONTES_PT.has(i.fonte) && !titulosPt[i.url]);
+if (pendentes.length) {
+  console.log(`
+Sem tradução em dados/titulos-pt.json (${pendentes.length}):`);
+  for (const i of pendentes) console.log(`${i.url}	${i.titulo}`);
+}
 console.log(`${itens.length} notícias, ${ranking.length} fatos distintos, ${tecnicas.length} técnicos / ${gerais.length} gerais`);
 console.log(`posts/${data}/ranking.md`);
