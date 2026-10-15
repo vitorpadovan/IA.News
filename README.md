@@ -10,7 +10,8 @@ Manter atualizada uma conta do Instagram, publicando diariamente notícias sobre
 
 1. `node scripts/coletar.mjs` — baixa as fontes configuradas em [config/fontes.json](config/fontes.json), filtra por
    tópico e grava **um `.md` por notícia** (com cabeçalho YAML) em `noticias/AAAA-MM-DD/<fonte>/<titulo>.md`.
-   URLs já coletadas ficam em `dados/coletadas.json` e não são gravadas de novo.
+   URLs já coletadas ficam em `dados/coletadas.json` e não são gravadas de novo. Ao final, faz commit e push só do
+   que o script alterou (use `--sem-git` para pular).
 2. Curadoria e geração do post (legenda, hashtags, carrossel).
 3. `node scripts/marcar-publicada.mjs <url | caminho.md> [url-do-post]` — registra em `dados/publicadas.json`.
 

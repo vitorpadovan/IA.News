@@ -1,13 +1,17 @@
 // Coleta notícias (TecMundo + Medium), grava um .md por notícia e atualiza dados/coletadas.json.
-// Uso: node scripts/coletar.mjs
+// Uso: node scripts/coletar.mjs [--sem-git]
+// Por padrão, faz commit só do que o script alterou (novos .md + dados/coletadas.json) e dá push.
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { execFileSync } from 'node:child_process';
 
 const raiz = join(dirname(fileURLToPath(import.meta.url)), '..');
 const cfg = JSON.parse(await readFile(join(raiz, 'config', 'fontes.json'), 'utf8'));
 const arqColetadas = join(raiz, 'dados', 'coletadas.json');
 const coletadas = JSON.parse(await readFile(arqColetadas, 'utf8'));
+const semGit = process.argv.includes('--sem-git');
+const alterados = [];
 const hoje = new Date().toISOString().slice(0, 10);
 
 const norm = (s) => s.normalize('NFD').replace(/\p{M}/gu, '').toLowerCase();
@@ -63,6 +67,7 @@ async function gravar(fonte, n, topicos) {
   ].join('\n');
   await mkdir(join(raiz, pasta), { recursive: true });
   await writeFile(join(raiz, arquivo), `${cab}# ${n.titulo}\n\n${htmlParaMd(n.html)}\n`, 'utf8');
+  alterados.push(arquivo.replaceAll(String.fromCharCode(92), '/'));
   coletadas[n.url] = { arquivo: arquivo.replaceAll('\\', '/'), titulo: n.titulo, fonte, coletadoEm: new Date().toISOString() };
   return true;
 }
@@ -89,3 +94,11 @@ for (const t of cfg.medium.tags) {
 }
 await writeFile(arqColetadas, JSON.stringify(coletadas, null, 2) + '\n', 'utf8');
 console.log(`${novas} notícia(s) nova(s) em noticias/${hoje}/`);
+if (novas && !semGit) {
+  const git = (...args) => execFileSync('git', args, { cwd: raiz, stdio: 'inherit' });
+  const arquivos = [...alterados, 'dados/coletadas.json'];
+  git('add', '--', ...arquivos);
+  // `-- <paths>` limita o commit a estes arquivos, ignorando o que mais estiver no índice.
+  git('commit', '-m', `Coleta de notícias ${hoje}: ${novas} nova(s)`, '--', ...arquivos);
+  try { git('push'); } catch { console.error('Commit feito, mas o push falhou. Rode `git push` manualmente.'); }
+}
