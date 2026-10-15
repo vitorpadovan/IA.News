@@ -100,7 +100,9 @@ for (const t of cfg.medium.tags) {
 // Feeds genéricos (RSS/Atom): um por entrada em cfg.feeds, limitados aos N mais recentes.
 for (const f of cfg.feeds ?? []) {
   try {
+    // `filtrar: true` aplica as palavras-chave do TecMundo (feeds gerais, como Tecnoblog).
     const lista = itens(await baixar(f.url))
+      .filter((n) => !f.filtrar || regexes.some((r) => r.test(norm(`${n.titulo} ${n.html}`))))
       .sort((x, y) => new Date(y.data || 0) - new Date(x.data || 0))
       .slice(0, f.limite ?? 15);
     for (const n of lista) if (await gravar(f.nome, n, f.topicos ?? [])) novas++;

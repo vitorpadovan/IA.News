@@ -18,7 +18,13 @@
       "copilot",
       "llm",
       "agente",
-      "agentes"
+      "agentes",
+      "ai",
+      "artificial intelligence",
+      "deepseek",
+      "mistral",
+      "grok",
+      "machine learning"
     ]
   },
   "medium": {
@@ -89,6 +95,155 @@
       "limite": 15,
       "topicos": [
         "deepseek"
+      ]
+    },
+    {
+      "nome": "canaltech",
+      "url": "https://canaltech.com.br/rss/inteligencia-artificial/",
+      "limite": 15,
+      "topicos": [
+        "inteligencia-artificial"
+      ]
+    },
+    {
+      "nome": "tecnoblog",
+      "url": "https://tecnoblog.net/feed/",
+      "limite": 15,
+      "topicos": [],
+      "filtrar": true
+    },
+    {
+      "nome": "olhardigital",
+      "url": "https://olhardigital.com.br/feed/",
+      "limite": 15,
+      "topicos": [],
+      "filtrar": true
+    },
+    {
+      "nome": "techcrunch",
+      "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "limite": 15,
+      "topicos": [
+        "inteligencia-artificial"
+      ]
+    },
+    {
+      "nome": "theverge",
+      "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
+      "limite": 10,
+      "topicos": [
+        "inteligencia-artificial"
+      ]
+    },
+    {
+      "nome": "arstechnica",
+      "url": "https://arstechnica.com/ai/feed/",
+      "limite": 15,
+      "topicos": [
+        "inteligencia-artificial"
+      ]
+    },
+    {
+      "nome": "mit-technology-review",
+      "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed",
+      "limite": 10,
+      "topicos": [
+        "inteligencia-artificial"
+      ]
+    },
+    {
+      "nome": "simonwillison",
+      "url": "https://simonwillison.net/atom/everything/",
+      "limite": 15,
+      "topicos": [],
+      "filtrar": true
+    },
+    {
+      "nome": "latent-space",
+      "url": "https://www.latent.space/feed",
+      "limite": 10,
+      "topicos": [
+        "inteligencia-artificial"
+      ]
+    },
+    {
+      "nome": "import-ai",
+      "url": "https://importai.substack.com/feed",
+      "limite": 10,
+      "topicos": [
+        "inteligencia-artificial"
+      ]
+    },
+    {
+      "nome": "codex",
+      "url": "https://github.com/openai/codex/releases.atom",
+      "limite": 10,
+      "topicos": [
+        "codex",
+        "openai"
+      ]
+    },
+    {
+      "nome": "gemini-cli",
+      "url": "https://github.com/google-gemini/gemini-cli/releases.atom",
+      "limite": 10,
+      "topicos": [
+        "gemini",
+        "google"
+      ]
+    },
+    {
+      "nome": "google-developers",
+      "url": "https://developers.googleblog.com/feeds/posts/default",
+      "limite": 15,
+      "topicos": [
+        "google"
+      ],
+      "filtrar": true
+    },
+    {
+      "nome": "hackernews",
+      "url": "https://hnrss.org/newest?q=claude&points=50",
+      "limite": 15,
+      "topicos": [
+        "claude",
+        "hackernews"
+      ]
+    },
+    {
+      "nome": "hackernews",
+      "url": "https://hnrss.org/newest?q=openai&points=50",
+      "limite": 15,
+      "topicos": [
+        "openai",
+        "hackernews"
+      ]
+    },
+    {
+      "nome": "hackernews",
+      "url": "https://hnrss.org/newest?q=gemini&points=50",
+      "limite": 15,
+      "topicos": [
+        "gemini",
+        "hackernews"
+      ]
+    },
+    {
+      "nome": "hackernews",
+      "url": "https://hnrss.org/newest?q=anthropic&points=50",
+      "limite": 15,
+      "topicos": [
+        "anthropic",
+        "hackernews"
+      ]
+    },
+    {
+      "nome": "hackernews",
+      "url": "https://hnrss.org/newest?q=deepseek&points=50",
+      "limite": 15,
+      "topicos": [
+        "deepseek",
+        "hackernews"
       ]
     }
   ]
