@@ -1,4 +1,19 @@
-# IA.News — fontes de notícias (conhecimento validado em 2026-10-14)
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+## Visão geral
+
+Repositório de pesquisa/curadoria, **sem código de aplicação, build ou testes**. Objetivo: manter uma conta de Instagram
+publicando diariamente notícias sobre IA. O [README.md](README.md) lista as fontes (sites, canais do YouTube, RSS) e os
+tópicos de interesse (claude-code, chat-gpt, claude, codex, anthropic, inteligencia-artificial, artificial-intelligence).
+O trabalho aqui é coletar e filtrar notícias dessas fontes (seção abaixo), não desenvolver software.
+
+## Estrutura
+
+- `.mcp.json` + `scripts\playwright-mcp.cmd`: sobem o `@playwright/mcp` em modo `--extension`; o script carrega as
+  variáveis do `.env` da raiz (ignorado pelo git) antes de iniciar. Sem `.env`, o script falha.
+- `.playwright-mcp/`: logs e snapshots gerados pelo MCP (ignorado pelo git).
 
 ## MCP
 
