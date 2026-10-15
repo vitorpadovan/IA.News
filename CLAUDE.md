@@ -22,6 +22,8 @@ O trabalho aqui é coletar e filtrar notícias dessas fontes (seção abaixo), n
 - `.claude/commands/noticias-do-dia.md`: slash command `/noticias-do-dia [data] [qtd]`. Seleciona até 10 finalistas de
   `noticias/<data>/` (ignorando `dados/publicadas.json` e o que já virou rascunho), espera o usuário escolher e grava
   `posts/<data>/NN-<slug>.md` (legenda, hashtags, carrossel). Nunca publica nem marca como publicada.
+- `scripts/pontuar.mjs`: pontua as notícias do dia e gera `posts/<data>/ranking.md` (20 gerais + 20 técnicas). Agrupamentos
+  manuais do mesmo fato em `config/mesmo-fato.json`.
 - `scripts/marcar-publicada.mjs`: registra publicação em `dados/publicadas.json`.
 - Comandos: `node scripts/coletar.mjs`, `node scripts/marcar-publicada.mjs <url|md> [url-do-post]`.
 

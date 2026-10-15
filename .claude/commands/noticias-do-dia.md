@@ -1,6 +1,6 @@
 ---
 description: Cura as notícias coletadas e gera rascunhos de posts de Instagram (legenda, hashtags e carrossel)
-argument-hint: "[AAAA-MM-DD] [quantidade, padrão 10] [todos]"
+argument-hint: "[AAAA-MM-DD] [tamanho de cada lista, padrão 20] [todos]"
 ---
 
 Faça a curadoria das notícias coletadas e gere rascunhos de posts para o Instagram.
@@ -16,24 +16,18 @@ Argumentos: `$ARGUMENTS` (data da coleta, padrão = hoje; quantidade de finalist
 3. Descarte também o que já virou rascunho em `posts/` (procure a `url` nos arquivos de lá).
 4. Se a pasta do dia não existir ou ficar vazia, avise e sugira rodar `node scripts/coletar.mjs`. Não rode sozinho.
 
-## 2. Finalistas (até 10 itens)
+## 2. Pontuação e finalistas (20 gerais + 20 técnicas)
 
-Critérios, em ordem:
-- **Relevância** para os tópicos do projeto (claude-code, chatgpt, claude, codex, anthropic, openai, gemini, deepseek,
-  inteligência artificial) e impacto real: lançamento, mudança de preço/política, pesquisa relevante.
-- **Frescor**: prefira o que foi publicado nas últimas 48 h.
-- **Fonte**: prefira fonte primária/oficial (blog da empresa, release) a texto que só a comenta. Se várias notícias falam
-  do mesmo fato, escolha uma só, a de fonte mais próxima da origem.
-- **Variedade**: não repita a mesma empresa em todos os posts.
-- **Público brasileiro**: dê preferência a algo que faça sentido para quem lê em pt-BR.
-
-Descarte conteúdo promocional, tutorial genérico de baixa qualidade e itens sem informação (só título).
-Fontes com só snippet (Medium, Hacker News): leia o artigo original antes de usar. Se não conseguir ler, **não invente
-detalhes**; use só o que está confirmado.
+1. Rode `node scripts/pontuar.mjs <data> [tamanho]`. Ele pontua cada notícia (0–100: frescor, tópico, cobertura em várias
+   fontes, autoridade da fonte, substância do texto, sinal de lançamento/risco, menos penalidades) e grava
+   `posts/<data>/ranking.md` com a lista **Geral** e a lista **Técnica** (índice técnico ≥ 40), com o detalhe da pontuação.
+2. Revise o ranking com juízo editorial: o script não junta o mesmo fato escrito em idiomas diferentes. Se achar
+   duplicatas, acrescente os trechos de título em `config/mesmo-fato.json` e rode de novo.
+3. Confira o que ele não sabe: itens `sem data` (google-developers) e fontes só com snippet (Medium, Hacker News).
 
 ## 3. Escolha do usuário
 
-Apresente as finalistas numeradas (tabela: nº, título, fonte, data, uma linha dizendo por que entrou) e **pare**
+Apresente as duas listas numeradas (tabela: nº, pontos, título, fonte, data, uma linha dizendo por que entrou) e **pare**
 esperando o usuário indicar quais virarão post (ex.: "1, 3, 7"). Só pule essa pausa se `todos` foi passado.
 
 ## 4. Rascunho de cada post escolhido
