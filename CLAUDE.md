@@ -14,6 +14,9 @@ O trabalho aqui é coletar e filtrar notícias dessas fontes (seção abaixo), n
 - `scripts/coletar.mjs`: lê `config/fontes.json` (feed/segmentos/palavras-chave do TecMundo, tags do Medium) e grava
   `noticias/AAAA-MM-DD/<fonte>/<titulo>.md` com cabeçalho YAML. Controle de duplicatas em `dados/coletadas.json`.
   Ao final faz `git add`/`commit`/`push` **apenas** dos arquivos que alterou; `--sem-git` desativa.
+- `config/fontes.json` → `feeds[]`: feeds RSS/Atom genéricos (`nome`, `url`, `limite`, `topicos`); cada um vira uma pasta
+  `noticias/<data>/<nome>/`. Atom (GitHub releases) vem com HTML escapado; o script trata. O feed da Anthropic é
+  **não oficial** (comunidade, `Olshansk/rss-feeds`); DeepSeek só tem releases no GitHub e Google News (link `news.google.com`).
 - `scripts/marcar-publicada.mjs`: registra publicação em `dados/publicadas.json`.
 - Comandos: `node scripts/coletar.mjs`, `node scripts/marcar-publicada.mjs <url|md> [url-do-post]`.
 

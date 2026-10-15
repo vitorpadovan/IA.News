@@ -35,6 +35,11 @@ Requer Node 18+ e não tem dependências. O `.env` (modelo em `.env.example`) s�
 
 - https://rss.tecmundo.com.br/feed
 - https://medium.com/feed/tag/artificial-intelligence
+- https://openai.com/news/rss.xml
+- https://blog.google/products/gemini/rss/ e https://blog.google/technology/ai/rss/
+- https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_news.xml (não oficial)
+- https://github.com/anthropics/claude-code/releases.atom
+- https://github.com/deepseek-ai/DeepSeek-V3/releases.atom e Google News (busca `deepseek`)
 
 ## Tópicos
 
